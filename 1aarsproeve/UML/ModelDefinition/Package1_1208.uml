@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="009889cd-2e7d-40a7-ace1-2053c310869d"
+  name="Persistens" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="75266722-b4cc-4277-8995-8e3fd544ffb5"
+        name="PersistensFacade"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="7df3db24-f8dd-4618-852d-53dd21b1ce66"
+            name="GemDB"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8f727d73-07ba-4f95-82dc-74cf50f17aa6"
+                  name="string api"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3a52f6dd-b9e8-4d9d-ad29-8e4751d01984"
+                  name="object objekt"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3ed42757-4db9-40fb-bffe-0aee6737e433"
+            name="SletDB"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7fb32da4-8000-4c75-ab7d-0a9b34840871"
+                  name="string api"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="09992b9e-4e5c-4618-ad10-b0eefb809dcd"
+                  name="int id"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="128a19c7-fecf-4f9c-9006-d748104f9d19"
+            name="LoadDB"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9b3f09cf-a574-410b-a07c-230cc7cd644e"
+                  name="string api"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3bd5151a-6f91-4e0d-a58b-dfb61a35fdab"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="44c753fd-a587-4175-a977-093528b8d226"
+                      LastKnownName="List&lt;T&gt;"
+                      LastKnownLocation="Package1_1208.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="47f323d5-2c32-40a6-b928-ecd68408adb0"
+            name="RedigerDB"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7c938997-46c3-4675-8fb5-a6d66a6fc6eb"
+                  name="string api"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1aa186a5-add4-4b12-8565-03b248d62ecf"
+                  name="object objekt"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="227c9025-7bf9-4306-aaf9-f330db577ddb"
+                  name="int id"
+                  direction="In"
+                  isUnique="false">
+                  <defaultValue>
+                    <literalString
+                      Id="c4c35d18-1fde-41ec-98fa-073b096e7fb5"
+                      name="DefaultValue"
+                      value="0" />
+                  </defaultValue>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e9d2e860-2497-49b0-ba23-9674d18fc1aa"
+                  name="string streng"
+                  direction="In"
+                  isUnique="false">
+                  <defaultValue>
+                    <literalString
+                      Id="6c17f6c7-895e-4931-acd4-c07892d3b5e6"
+                      name="DefaultValue"
+                      value="null" />
+                  </defaultValue>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="44c753fd-a587-4175-a977-093528b8d226"
+        name="List&lt;T&gt;" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
